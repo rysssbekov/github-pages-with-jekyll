@@ -9,6 +9,7 @@ In this project, we will implement what we have learned in this course to comple
 # Code
 # Contributors
 {% for students in site.stu %}
-  <h2><span>@{{students.user}}</span> ({{ students.name }})</h2>
+  <img src="{{ students.image }}">
+  <p><span>@{{students.user}}</span> ({{ students.name }})</p>
   <p>{{ students.content | markdownify }}</p>
 {% endfor %}
